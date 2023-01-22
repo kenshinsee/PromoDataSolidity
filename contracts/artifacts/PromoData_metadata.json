@@ -1,0 +1,189 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_description",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_estimatedValue",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_accountId",
+						"type": "address"
+					},
+					{
+						"internalType": "address payable",
+						"name": "_reciever",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "getPromoData",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "promoDesc",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "promoParsedResult",
+								"type": "string"
+							}
+						],
+						"internalType": "struct PromoData.Promo[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					}
+				],
+				"name": "getPromoDataByIndex",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "promoDesc",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "promoParsedResult",
+								"type": "string"
+							}
+						],
+						"internalType": "struct PromoData.Promo",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getSummary",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string[]",
+						"name": "promoDescList",
+						"type": "string[]"
+					},
+					{
+						"internalType": "string[]",
+						"name": "promoParsedResultList",
+						"type": "string[]"
+					}
+				],
+				"name": "saveData",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/PromoData.sol": "PromoData"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/PromoData.sol": {
+			"keccak256": "0x8e95f4148d64328285db6358c8e40e01435fba94c0def277560d856ae828f847",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://54323b3589297b07346a4389affd0e7a4acdb4061b58b22979b9323c5878b96e",
+				"dweb:/ipfs/QmdCkTkushiFg6JakJVK8e3i2wQowEdg5tNRyGv516x2vx"
+			]
+		}
+	},
+	"version": 1
+}
