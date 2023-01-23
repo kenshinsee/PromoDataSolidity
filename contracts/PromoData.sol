@@ -9,7 +9,6 @@ contract PromoData {
         string promoParsedResult;
     }
     uint promoCount;
-    // mapping(uint => Promo) data;
     Promo[] data;
     string description;
     address accountId;
@@ -29,19 +28,26 @@ contract PromoData {
         estimatedValue = _estimatedValue;
     }
 
-    function saveData(string[] calldata promoDescList, 
-                     string[] calldata promoParsedResultList
-                    ) public payable {
+    function saveData(string[] memory promoDescList, 
+                      string[] memory promoParsedResultList
+                     ) public payable {
         require(promoDescList.length == promoParsedResultList.length);
         require(!complete);
+        require(msg.value >= estimatedValue);
+        
         for (uint i = 0; i < promoDescList.length; i++) {
-            Promo storage promoData = data[i];
+            Promo memory promoData;
             promoData.promoDesc = promoDescList[i];
             promoData.promoParsedResult = promoParsedResultList[i];
+            data.push(promoData);
         }
         promoCount = promoDescList.length;
-        reciever.transfer(address(this).balance);
         complete = true;
+    }
+
+    function transferValue() public {
+        require(msg.sender == reciever);
+        reciever.transfer(address(this).balance);
     }
 
     function getPromoDataByIndex(uint index) public view returns(Promo memory) {
@@ -53,7 +59,7 @@ contract PromoData {
     }
 
     function getSummary() public view returns(
-        string memory, address, address, uint, uint, uint, bool
+        string memory, address, address, uint, uint, uint, bool, uint
     ) {
         return (
             description, 
@@ -62,7 +68,8 @@ contract PromoData {
             estimatedValue, 
             createTime, 
             promoCount, 
-            complete
+            complete, 
+            address(this).balance
         );
     }
 

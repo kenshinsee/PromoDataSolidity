@@ -125,6 +125,11 @@
 						"internalType": "bool",
 						"name": "",
 						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -146,6 +151,13 @@
 				"name": "saveData",
 				"outputs": [],
 				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "transferValue",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -177,11 +189,11 @@
 	},
 	"sources": {
 		"contracts/PromoData.sol": {
-			"keccak256": "0x8e95f4148d64328285db6358c8e40e01435fba94c0def277560d856ae828f847",
+			"keccak256": "0x1d6a4c8c6dbf43355d745319bed83e46ffca7efa69e8b39f75cd3d9d732aa44b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://54323b3589297b07346a4389affd0e7a4acdb4061b58b22979b9323c5878b96e",
-				"dweb:/ipfs/QmdCkTkushiFg6JakJVK8e3i2wQowEdg5tNRyGv516x2vx"
+				"bzz-raw://6cc88b57579a0e31758e5bc319e05744be1d026adf038fee939f754fca29bcf0",
+				"dweb:/ipfs/QmVQgwFT9RfXS8D4trwgk1oaSVCWb7t1Aft9zhbSUefJHm"
 			]
 		}
 	},
