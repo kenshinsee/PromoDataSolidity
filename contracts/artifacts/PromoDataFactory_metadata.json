@@ -1,0 +1,125 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_description",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_estimatedValue",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address payable",
+						"name": "_receiver",
+						"type": "address"
+					}
+				],
+				"name": "createPromoData",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getPromoDataRequestCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getPromoDataStructList",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "promoDataAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "description",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "createTime",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct PromoDataFactory.PromoDataStruct[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getRecentlyCreatedPromoDataAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/PromoData.sol": "PromoDataFactory"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/PromoData.sol": {
+			"keccak256": "0xb5aaa2de2d38215a80254ca4b06a85fcc63b553ca6a045af523505965186fe05",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://150f239294d5599c37d0facf7e1f3e966826066373be2ca59bd9e17a935c30ab",
+				"dweb:/ipfs/QmZH6dXcaC16y6TLr9DjochBLdUqwcREN8WKkJxcK8ZWjd"
+			]
+		}
+	},
+	"version": 1
+}

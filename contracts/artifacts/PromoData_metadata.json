@@ -24,7 +24,7 @@
 					},
 					{
 						"internalType": "address payable",
-						"name": "_reciever",
+						"name": "_receiver",
 						"type": "address"
 					}
 				],
@@ -117,11 +117,6 @@
 						"type": "uint256"
 					},
 					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					},
-					{
 						"internalType": "bool",
 						"name": "",
 						"type": "bool"
@@ -149,6 +144,24 @@
 					}
 				],
 				"name": "saveData",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string[]",
+						"name": "promoDescList",
+						"type": "string[]"
+					},
+					{
+						"internalType": "string[]",
+						"name": "promoParsedResultList",
+						"type": "string[]"
+					}
+				],
+				"name": "saveDataAndTransferMoney",
 				"outputs": [],
 				"stateMutability": "payable",
 				"type": "function"
@@ -189,11 +202,11 @@
 	},
 	"sources": {
 		"contracts/PromoData.sol": {
-			"keccak256": "0x1d6a4c8c6dbf43355d745319bed83e46ffca7efa69e8b39f75cd3d9d732aa44b",
+			"keccak256": "0xb5aaa2de2d38215a80254ca4b06a85fcc63b553ca6a045af523505965186fe05",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6cc88b57579a0e31758e5bc319e05744be1d026adf038fee939f754fca29bcf0",
-				"dweb:/ipfs/QmVQgwFT9RfXS8D4trwgk1oaSVCWb7t1Aft9zhbSUefJHm"
+				"bzz-raw://150f239294d5599c37d0facf7e1f3e966826066373be2ca59bd9e17a935c30ab",
+				"dweb:/ipfs/QmZH6dXcaC16y6TLr9DjochBLdUqwcREN8WKkJxcK8ZWjd"
 			]
 		}
 	},
